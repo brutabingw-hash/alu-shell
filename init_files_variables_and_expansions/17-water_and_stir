@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 -c "exec('import os\nw=\"water\"\ns=\"stir.\"\nb=\"bestchol\"\nW=os.environ[\"WATER\"]\nS=os.environ[\"STIR\"]\nn=0\nfor c in W:n=n*5+w.index(c)\nm=0\nfor c in S:m=m*5+s.index(c)\nn=n+m\nr=\"\"\nwhile n:\n r=b[n%8]+r\n n//=8\nprint(r or b[0])')"
